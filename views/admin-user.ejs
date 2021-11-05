@@ -1,0 +1,81 @@
+<%- include('partials/header') %>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/admin-user.css"> 
+
+    <div class="container">
+    
+        <h1>User Info</h1>
+      <div class="row heading">
+            
+            <h5><span>Name</span>- <%=data.username%> <br><span>Project</span> - <%=data.projectName%></h5>
+            <p><span>Discription </span>- <%=data.discription%></p>
+            <h5 style="color: rgb(17, 156, 121);"><strong>Current Progress</strong> - <%=data.updates%></h5>
+            
+            
+      </div>
+      <%if(problem){%>
+    <div class="row problem">
+        <h3 >Problem</h3>
+       <div class="table-responsive table-body">
+                <table class="table table-bordered table-danger">
+                    
+                        <td><%=problem.problem%></td>
+                        <td><%=problem.discription%></td>  
+                        <td><a href="/admin/remove-problem/<%=problem._id%>">Resolved</a></td>    
+                </table>
+       </div>      
+    </div>
+    <%}%>
+
+   <div class="row">
+            
+           <div class="col-lg-6">
+                
+                <form class="form" action="/admin/user/update-progress" method="POST">
+                    <h4>Update Progress</h4>
+                    
+                    <input type="text" placeholder="New Update" name="updates" id="">
+                    <button type="submit" name="id" value="<%=data._id%>">update</button>
+                </form>
+                
+           </div>
+        </div>
+           
+            
+    
+            <div class="photos row">
+                <% for(var i=0;i<data.images.length;i++){%>
+                <div class="col-lg-6 col-sm-12">
+                   <div class="photo">  
+                            <img class="main-img" src="/images/<%=data.images[i]%>" alt="">
+                            <a href="/admin/user/delete-image/<%=data._id%>/<%=data.images[i]%>" class="download-img"><img src="/images/delete.png" alt="">Delete  </a>
+                   </div>
+                </div>
+                <%}%>
+            </div>
+     
+            
+
+        <div class="row" >
+            <div class="col-lg-6">
+                
+                   
+                    <form action="/admin/user/upload-image"  method="POST" enctype="multipart/form-data">
+                        <h3>Upload New Image</h3>
+                     <div class="form-group">
+                            <input name="image" class="form-control-file" type="file">
+                            <button type="submit"  name="id" value="<%=data._id%>">Upload</button>
+                     </div>
+                        </form>
+            
+            </div>
+        </div>
+        <div><a href="/admin"><h4>← back</h4></a></div>
+    <div class="row compleated">
+            <div class="col-md-12" >
+                <a href="/admin/project-done/<%=data._id%>"> <h3><button class="btn btn-danger btn-lg">Project Compleated</button></h3> </a>
+               
+            </div>
+    </div>
+        </div>   
+        <%- include('partials/footer') %>

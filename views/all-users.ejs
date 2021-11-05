@@ -1,0 +1,18 @@
+
+<%- include('partials/header') %>
+
+<h1>all Users</h1>
+<table border="1">
+    <% for(var i=1;i<data.length;i++){%>
+    <tr>
+    <td><%=data[i].username%></td>
+    <td><%=data[i].projectName%></td>
+    <td><%=data[i].discription%></td>
+    <td><%=data[i].status%></td>
+    <td><a href="/admin/user/<%=data[i]._id%>">Open</a></td>
+    </tr>
+    <%}%>
+    
+    </table>
+    <a href="/admin">🠔 back</a>
+    <%- include('partials/footer') %>

@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<h1>Req Info from admin pov</h1>
+<table border="1">
+ <td><%=data.username%></td>
+<td><%=data.phone%></td>
+<td><%=data.email%></td>
+<td><%=data.discription%></td>
+<td><%=data.address%></td>
+
+<td><a href="admin/remove-req/<%=data._id%>">remove</a></td>
+</table>
+
+<%- include('partials/footer') %>

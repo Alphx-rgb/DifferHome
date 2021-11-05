@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/carousel.css">
+  <meta name="description" content="Build house,Construct house,Buy plot,Sell house,Refurbish or Other services in Rajasthan,hariyana and northern India. ">
+    
+  <title>Differ Home</title>
+</head>
+
+<body>
+
+  <%- include('partials/nav') %>
+
+  <!-- -------------------------------nav-------------------------------------- -->
+
+  <!--Slider-->
+  <div id="slider">
+    <div class="slide slide1">
+      <a href="/"></a>
+    </div>
+
+    <div class="slide slide2">
+      <a href="/construction">
+        <div class="center_anchor">
+        </div>
+      </a>
+    </div>
+
+    <div class="slide  slide3"><a href="/services">
+        <div class="center_anchor">
+        </div>
+      </a>
+    </div>
+
+    <div class="slide  slide4"> <a href="/buy-plot">
+        <div class="center_anchor">
+        </div>
+      </a>
+    </div>
+    <div class="slide  slide5  "> <a href="/resell">
+        <div class="center_anchor">
+        </div>
+      </a>
+    </div>
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" id="next" aria-hidden="true"></i>
+    </span>
+  </div>
+
+<!------------------------------------------form---------------------------->
+<div class="form-box2">
+  <h1 class="ribbon">
+    <strong class="ribbon-content">Book a free Consultation</strong>
+  </h1>
+
+  <form action="/firstform" method="POST">
+    <label>*Name</label>
+    <input type="text" name="name" required>
+    <label>*Phone</label>
+    <input type="text" name="phone" required><br>
+    <label>Email</label>
+    <input type="text" name="email"><br>
+    <label>*Address</label>
+    <input type="text" name="address" required><br>
+    <button type="submit" class="btn btn-warning btn-lg">Book Now!</button>
+
+  </form>
+</div>
+  <!-- --------------------------services--------------------------------------------- -->
+
+  <div class="services container" id="services">
+    <div class="row">
+      <h1> OUR SERVICES</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="service-item item1">
+          <div class="inner">
+          <a href="/construction">  <h2><b>Construction</b></h2></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="service-item item2">
+          <div class="inner">
+            <a href="/buy-plot"><h2><b>Buy Plot</b></h2></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="service-item item3">
+          <div class="inner">
+            <a href="/services"><h2><b>Renovation</b></h2></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="service-item item4">
+          <div class="inner">
+            <a href="/resell"><h2><b>Resell</b></h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------------sec 3-------------------- -->
+
+  <%- include('partials/middle') %>
+  <script>
+     
+function alertFunc() {
+  document.getElementById("next").click();
+  }
+  var myVar = setInterval("func()", 5000);
+
+
+var func = alertFunc;
+
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+
+</html>

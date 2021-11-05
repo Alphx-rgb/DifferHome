@@ -1,0 +1,50 @@
+
+.about_body
+{
+    text-align:center;
+}
+.container p{
+  font-size: x-large;
+  text-align: center;
+  font-weight: lighter;
+}
+.about_body h1{
+  margin-top: 2rem;
+  font-weight: bolder;
+  font-size: 3-rem;
+  letter-spacing: 1rem;
+}
+.about
+{
+    background-image: url(http://321homesinc.com/wp-content/uploads/2019/12/aboiut-us-768x285.jpg);
+    background-size: cover;
+    object-fit:cover; 
+    background-position: center;
+    min-height:50vh;
+    text-align: center;
+
+}
+
+
+.whyus_heading{text-align: center;
+    margin:3%;}
+  .box_whyus{
+    margin:2%;
+  }
+
+@media screen and (max-width:1100px) { 
+
+    .row_box_whyus{
+      display:block;
+  }
+  }
+  
+  
+
+
+@media screen and (min-width:1100px) {
+        .row_box_whyus{
+          display:flex;
+      }
+  
+  }

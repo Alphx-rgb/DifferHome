@@ -1,0 +1,117 @@
+
+form {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    margin: 2rem auto;
+
+  }
+  h1{
+    margin:3rem 0;
+  }
+  form h3{
+    margin-bottom: 3rem;
+  }
+  .compleated div h3{
+    text-align: center;
+  }
+  .form input {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 20rem;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 1rem auto;
+    display: block;
+   
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+  }
+  
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: rgb(17, 156, 121);
+    border: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 3px;
+    width: 20rem;
+    font-size: 18px;
+    margin: 1rem;
+  }
+
+.heading h5{
+   font-weight: lighter; 
+   margin: 1rem 0;
+}
+.heading h5 span,.heading p span{
+  font-weight: bold; 
+  
+}
+.heading h1{
+  margin: 2rem 0;
+}
+.compleated{
+  margin: 2rem 0;
+}
+.heading{
+  background-color: var(--bs-gray-200);
+}
+h1{
+    color: rgb(17, 156, 121);;
+}
+a{
+  text-decoration: none;
+}
+.photo{
+    display: flex;
+
+    flex-direction: column;
+    padding: 2rem;
+    margin:2rem
+    
+}
+.main-img{
+    height: 25rem;
+    object-fit: cover;
+    background-size: cover;
+}
+.photo a{
+    display: block;
+    text-decoration: none;
+    margin: 1rem;
+    color: rgb(17, 156, 121);
+    font-size: 1.2rem;
+    
+
+}
+.photo a img{
+    height: 1.7rem;
+    margin-right: 5px;
+}
+.problem{
+  margin: 3rem 0;
+}
+.problem h3{
+  color: red;
+}
+@media screen and (max-width: 768px) {
+
+ h1{
+     margin: 0 auto;
+     text-align: center;
+ }
+ 
+.form input,form button,form {
+    width: 90%;
+}
+.photo{
+    padding: 0rem;
+    margin:0rem;
+  }
+}

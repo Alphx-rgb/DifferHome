@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="container">
+    <form class="form" action="/admin/add-user" method="POST">
+        <h1>Add user</h1>
+    <input type="text" name="username" placeholder="username" id="">
+    <input type="text" name="password" placeholder="password">
+    <input type="text" name="projectName" placeholder="projectName">
+    <input type="text" name="discription" placeholder="discription">
+    <button type="submit">ADD</button>
+  
+    </form>
+    <a href="/"> <p>← back to home</p></a>
+    
+</div>
+
+<%- include('partials/footer') %>

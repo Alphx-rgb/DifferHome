@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/step_form.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/nav.css">
+
+  <link rel="stylesheet" href="./css/resell.css">
+
+
+  <meta name="description" content="Build house,Construct house,Buy plot,Sell house,Refurbish or Other services in Rajasthan,hariyana and northern India. ">
+    
+  <title>Differ Home</title>
+</head>
+
+<body>
+
+  <%- include('partials/nav') %>
+
+  <!-- -------------------------------nav-------------------------------------- -->
+
+  <div class="homepage">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading">
+            <h1>RESELL</h1>
+       <a href="tel:+918769258658"><button class="btn btn-success btn-lg">Book Now <i class="fab fa-whatsapp whtsp"></i>
+              </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------------------------  step form ----------------->
+<div class="out-container">
+  <div class="container1 step_form">
+    <div class="wrapper">
+      <ul class="steps">
+        <li class="is-active">Step 1</li>
+        <li>Step 2</li>
+        <li>Step 3</li>
+      </ul>
+      <form class="form-wrapper" method="post" action="/resell" >
+        <fieldset class="section is-active">
+
+          <h3>Area Of Property</h3>
+          <div class="row1 cf">
+            <input type="text" name="area" id="password" placeholder="Approximate area" >
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Name of the City</h3>
+          <div class="row1 cf">
+            <input type="text" name="city" id="password" placeholder="Nearby city" >
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <h3>Time Period</h3>
+          <div class="row cf">
+            <div class="four col">
+              <input type="radio" value="As Soon As Possible" name="time" id="r4" checked>
+              <label for="r4">
+                <h4>As Soon As Possible</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" value="Under 1 month" name="time" id="r5"><label for="r5">
+                <h4>Under 1 month</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" value="Under an year" name="time" id="r6"><label for="r6">
+                <h4>Under an year</h4>
+              </label>
+            </div>
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section" >
+          <h3>Submit Details</h3>
+          <input type="text" name="name" id="password" placeholder="name" required>
+          <input type="tel" name="phone" id="password" placeholder="Phone Number" required>
+          <input type="email" name="email" id="password2" placeholder="email(optional)">
+          <button type="submit" class="button1">Submit</button>
+        </fieldset>
+
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- -------------------------------------sec 3-------------------- -->
+  <%- include('partials/middle') %>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/step_form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/user.css">   
+<div class="container">
+    <div class="row">
+        <div class="col-10"><h1 class="heading">Hello <%=data.username%></h1></div>
+        <div class="col-2 logout"><a href="/logout"><button class="btn btn-danger " >☠ Logout</button></a></div>
+            
+        </div>
+        
+        <h2>Your Project -<%=data.projectName%></h2>
+        <p>Discription - <%=data.discription%></p>
+
+
+
+
+        <div class="updates"> 
+
+        <p>Current Progress - <%=data.updates%></p>
+
+        <div class="photos row">
+            <% for(var i=0;i<data.images.length;i++){%>
+            <div class="col-lg-6 col-sm-12">
+               <div class="photo">  
+                        <img class="main-img" src="/images/<%=data.images[i]%>" alt="">
+                        <a href="/user/download/<%=data.images[i]%>" class="download-img"><img src="./images/download.png" alt="">Download </a>
+               </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+
+    <%if(problem){%>
+<div class="problem row" >
+    
+            <table class="table">
+                <h5>Your Problem</h5>
+                <tr>
+                    <td scope="col"><%=problem.problem%></td>
+                </tr>
+                <tr>
+                    <td scope="col"><%=problem.discription%></td>
+                </tr>
+            </table>
+    
+            <p>Dont worry ,your problem will be resolved soon . . .</p>
+            <%}else{%> 
+
+       <div class="form col-lg-4 col-sm-12" >
+       
+            <h3> Register a problem </h3>
+            <form action="/user/problem" method="POST">
+                <input type="text" name="problem" id="" placeholder="problem">
+                <input type="text" name="discription" id="" placeholder="discription">
+                <input type="hidden" name="id" value="<%=data._id%>" id="">
+                <button type="submit" >Submit</button>
+            </form>
+
+       </p> 
+        </div>
+        <%}%>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="./js/nav.js"></script>
+<%- include('partials/footer') %>

@@ -1,0 +1,119 @@
+.photos {
+    
+  
+
+}
+.updates{
+    background-color: var(--bs-gray-100);
+    margin: 2rem 0 ;
+}
+.problem h3{
+    color: rgb(107, 100, 100);
+    margin: 2rem auto;
+}
+
+.form{
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 2rem;
+}
+form {
+    padding: 2rem 0;
+    position: relative;
+  }
+  form input {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 20rem;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 1rem auto;
+    display: block;
+   
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+  }
+  
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: rgb(17, 156, 121);
+    border: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 3px;
+    width: 20rem;
+    font-size: 18px;
+    margin: 1rem;
+  }
+.problem p{
+        color: rgb(17, 156, 121);
+        font-size: 1.3rem;
+}
+.problem{
+    margin: 5rem 0 ;
+}
+.updates p{
+    padding: 2rem;
+    font-size: 1.4rem;
+    /* font-weight: lighter; */
+    color:rgb(17, 156, 121); ;
+}
+.photo{
+    display: flex;
+
+    flex-direction: column;
+    padding: 2rem;
+    margin:2rem
+    
+}
+.main-img{
+    height: 25rem;
+    object-fit: cover;
+    background-size: cover;
+}
+.photo a{
+    display: block;
+    text-decoration: none;
+    margin: 1rem;
+    color: rgb(17, 156, 121);
+    font-size: 1.2rem;
+}
+.heading{
+    margin: 3rem;
+}
+
+.photo a img{
+    height: 1.7rem;
+    margin-right: 5px;
+}
+h2{
+   font-weight: lighter; 
+}
+h1{
+    color: rgb(17, 156, 121);;
+}
+@media screen and (max-width: 768px) {
+ .form{
+    margin: 4rem auto;
+ }
+ h1{
+     margin: 0 auto;
+     text-align: center;
+ }
+ .photo{
+
+    padding: 0rem;
+    margin:0rem;
+  }
+form input,form button {
+    width: 90%;
+}
+}
+.logout{
+    margin-top: 4rem;
+}
