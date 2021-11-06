@@ -1,9 +1,5 @@
 
-.about_body
-{
-    text-align:center;
-}
-.container p{
+.container0 p{
   font-size: x-large;
   text-align: center;
   font-weight: lighter;
@@ -13,6 +9,7 @@
   font-weight: bolder;
   font-size: 3-rem;
   letter-spacing: 1rem;
+  text-align:center;
 }
 .about
 {
@@ -27,9 +24,9 @@
 
 
 .whyus_heading{text-align: center;
-    margin:3%;}
+    margin:4rem;}
   .box_whyus{
-    margin:2%;
+    margin:4rem;
   }
 
 @media screen and (max-width:1100px) { 
