@@ -50,8 +50,8 @@ app.use(function (req, res, next) {
 
 const mongoose = require('mongoose');
 const { stringify } = require('querystring');
-// const Uri='mongodb+srv://Admin:tyagi25dec@cluster0.mjgvd.mongodb.net/homesDB?retryWrites=true&w=majority'
-Uri="mongodb://localhost:27017/homesDB";
+const Uri='mongodb+srv://Admin:tyagi25dec@cluster0.mjgvd.mongodb.net/homesDB?retryWrites=true&w=majority'
+// Uri="mongodb://localhost:27017/homesDB";
 mongoose.connect(Uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const userSchema = new mongoose.Schema({
