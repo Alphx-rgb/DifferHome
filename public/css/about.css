@@ -13,13 +13,12 @@
 }
 .about
 {
-    background-image: url(http://321homesinc.com/wp-content/uploads/2019/12/aboiut-us-768x285.jpg);
+    background-image: url("/images/about.jpg");
     background-size: cover;
     object-fit:cover; 
     background-position: center;
     min-height:50vh;
     text-align: center;
-
 }
 
 

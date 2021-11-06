@@ -143,7 +143,10 @@ app.post('/login', function (req, res) {
         }
     })
 })
-
+app.get('/logout', function (req, res) {
+    req.logOut();
+    res.redirect('/');
+})
 app.get('/admin', function (req, res) {
     if (req.isAuthenticated ) {
         if(req.session.passport.user == process.env.ADMIN){
