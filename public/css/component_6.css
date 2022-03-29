@@ -1,0 +1,33 @@
+.component_6{
+    display: flex;align-items: center;justify-content: center;height: 60vh;
+
+}
+#blue_container{
+    background-color: #E0EEF5;height: 50vh;width: 90vw;border-radius: 5px;display: flex;
+}
+
+.compo_head_6
+{display: flex;align-items: center;justify-content: center;}
+
+.component_6_phone{
+    display: none;;
+}
+.component_6 #blue_container .text-section{
+    display: flex;align-items: center;justify-content: center;flex-direction: column;width: 50vw;
+}
+.component_6 #blue_container .text-section #compo_head_6-2{
+    position: relative; left: 10rem;
+}
+
+/* For Phones */
+.component_6_phone{
+    /* margin:auto; */
+}
+.component_6_phone #blue_container{
+    width:100%;
+    height:fit-content;
+}
+.component_6_phone .text{
+    margin:5%;
+    font: normal normal bold 30px Noto Sans;
+}

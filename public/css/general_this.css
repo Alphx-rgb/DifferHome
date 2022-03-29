@@ -1,0 +1,25 @@
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width:15rem;
+    outline:none;
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    margin:auto;
+    background-color: transparent;
+    pointer-events: none; 
+  }
+  input[type="text"]{
+    appearance: none;
+    outline: none;
+    border:none;
+    height:100%;
+    width:100%;
+    font-size: 1.5em;;
+  }

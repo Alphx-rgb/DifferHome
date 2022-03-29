@@ -1,0 +1,226 @@
+.col2{
+    box-sizing: border-box;
+    height:auto;    
+    overflow: hidden;
+    padding-right:8%;
+    padding-left:3%;
+    width:100%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}   
+.searchbar{
+    /* margin-right:2rem; */
+    /* margin-left:2rem; */
+    width:100%;
+    padding-right: auto;
+    padding-left:auto;
+}
+.searchbar .part1{
+    background-color: #F5F5F5;
+    display: flex;;
+    border-radius: 10px;
+    font-size:1rem;
+    padding:0%; 
+    justify-content: flex-start;
+    width:80%;
+    outline:none;
+}
+.part1 .box{ 
+    
+    height:100%;
+    width:auto;
+    
+    background-color: #F5F5F5;
+    /* margin-right:0px; */
+}
+.part1 .box select{ 
+    background-color: #254E7B;
+    color:black;
+    outline: none;
+    border:none;
+    font-size: 1rem; 
+    font-weight: bold;
+    /* padding-top:10%; */
+    height:100%;
+
+    /* border-radius: 0px 0px 10px 10px; */
+}
+
+.part1 .search{
+    /* flex-grow:1;     */
+    /* margin-left:1em; */
+    margin:0px; 
+    width:90%;
+}
+.search input{
+   width:100%;
+}
+
+.search{
+    display: flex;
+    
+}
+ .search .icon{
+    /* flex-grow:2; */
+    /* padding-top:1rem; */
+    align-self: center;
+    margin-right:1rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+ }  
+ .search input{
+     /* flex-grow:2; */
+     margin-top: 0px;
+     background-color: #F5F5F5;
+     font-size:0.8em;
+     outline: none;
+ }
+
+.search input:autofill-selected{
+    display:none;
+     background-color: #F5F5F5 !important;
+ }
+
+ .search_button{
+     margin:0.3rem;
+     margin-bottom: 0.5rem;
+     width:auto;    
+     border-radius: 5px;
+     align-self: flex-end;
+     padding: 0.4rem 0.7rem;
+     font-size: 0.8rem;
+     letter-spacing: 1pt;
+     cursor: pointer;
+     font-weight: bold;
+     color:white;
+    background-color: #254E7B;
+    z-index: 2;
+    box-shadow:2px 2px #F5F5F5;
+}      
+select option{
+    width:20px;
+    position: absolute;
+    top:1000px;
+    font-size: 0.8rem;
+}
+select option:hover{
+    background-color: rgb(73, 121, 107);
+}
+
+.option{
+    position: relative;
+    width:fit-content;
+    padding:0.21rem ;
+    border-radius: 2%;;
+    height:fit-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.option .icon{
+    font-weight: 900;
+    font-size: 2rem;
+    /* color: #48766E; */
+}
+.option label{
+
+    cursor: pointer; /*due to default stylesheet*/
+    /* font-size:1.2rem; */
+    margin: auto;
+}
+.box_cover{
+        position: absolute;
+        top:0px;
+        bottom: 0px;
+        left:0px;
+        right:0px;
+        /* border-radius: 10px; */
+}
+    
+/* overwriting bootstrap */
+.part2a .row>*{
+    width:auto;
+}
+
+
+.villa{
+    padding-left:2%;
+    padding-right: 2%;
+    width:5rem;
+}
+
+.options{ 
+    /* padding-left: 10%; */
+    display:flex;
+    align-items: center;
+    margin:5%;
+    margin-left:0px;
+}
+
+.box{
+    position: relative;
+    cursor: pointer;
+    width:2rem;
+    height:2rem;
+    /* border: 1px solid #707070; */
+    text-align: center;
+    margin: 0.6rem;
+    margin-left: 0px;
+    border-radius: 8px;
+    padding-top: 0.4rem;
+    margin-top:0.2rem;
+    margin-bottom: 0.2rem;
+    border:none;  
+    color: #5B5A5A;
+    font: normal normal normal 15px Tahoma;
+}
+.box .box_cover{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    z-index:0;
+}
+
+ .box_bkcgrd{
+    z-index:2;
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+ }
+input:checked + .box_cover{
+    background-color: #48766E;
+    z-index: 0;
+}
+ input:checked ~ label{
+    color:white;
+    z-index: 2;
+    transform-style: preserve-3d;
+    /* background-color: transparent; */
+} 
+input:checked ~ .icon{
+    transform-style:preserve-3d ;
+    color:white;
+    z-index: 4;
+    background-color: transparent;
+}
+input:checked ~ div{
+    
+    background-color: #48766E;
+
+}
+
+label{
+    cursor: pointer;
+}
+

@@ -1,0 +1,132 @@
+
+.container-out{
+    width:95%;
+    margin: 0 4% 0 1%;
+}
+
+.result-count P{
+    display: inline-block;
+}
+.result-count{
+    float: left;
+    margin-bottom: 1rem;
+}
+.sort-by{
+    float: right;
+}
+.sort-by select{
+    width: 8rem;
+    background-color: #F5F5F5;
+    margin-right: 4rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 7px;
+}
+.card{
+    width: 22rem;
+    border-radius: 1rem;
+    background-color: #F5F5F5;
+    margin: 2rem auto;
+    margin-bottom: 7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cards>div:nth-child(-n+3){
+    margin-top: 3.8rem;
+}
+.card h4{
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-top:-3.6rem;
+    margin-left: 1rem;
+    font-size:1.3rem;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+
+.details{
+    margin-top: 8rem;
+}
+.card p{
+    margin: 0;
+    margin-left: 1rem; 
+    font-size: 0.9rem;
+}
+
+.main-image{
+    /* background-image: url('./main.jpg'); */
+    width:21rem;
+    object-fit: cover;
+    height: 11rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 0;
+    position: absolute;
+    top:-7rem;
+    left:7px;
+    box-shadow: 0 4px 8px 0 rgba(37, 78, 123, 0.2), 0 6px 20px 0 rgba(37, 78, 123, 0.19);
+    /* transform: translateY(-50px) */
+}
+
+.icon-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icon-details i{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.icon-details p{
+    font-size: 0.8rem;
+    margin-left: 0;
+    color: #254E7B;
+}
+
+
+.card-bottom{
+    background-color: white!important;
+    border-radius: 5px 5px  5px  1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+.price{
+    display: inline-block;
+    padding: 4px 4px 4px 9rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-btn{
+    width: 7rem;
+    border-radius: 5px 5px  0.5rem 5px;
+    margin: 0;
+    float: right;
+    position: relative;
+    bottom: 2px;
+    background-color: #254E7B;
+}
+.pointers{
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
+}
+.next-btn{
+    margin-left:1rem ;
+}
+@media (max-width: 1500px) {
+
+.card{
+    width: 20rem;
+}
+.main-image{
+    width: 19rem;
+}
+.price{
+    padding:4px 4px 4px 7rem;
+}
+.container-out{
+    width: 96%;
+    margin-right: 4%;
+}
+}

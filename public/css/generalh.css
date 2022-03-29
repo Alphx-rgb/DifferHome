@@ -1,0 +1,87 @@
+
+*{
+  font-size: 16px !important;
+  box-sizing: border-box;
+  font-family:" Segoe UI, Semibold";
+}
+.vl{
+  height: 80%;
+  width:0px;  
+  margin:auto;
+  border-left:0.3px solid grey;
+  /* box-shadow: 0px 1.2px 0px 0px grey; */
+}
+input[type="text"]{
+  appearance: none;
+  outline: none;
+  border:none;
+  height:100%;
+  width:100%;
+  font-size: 1.5em;;
+}
+h3{
+  font-size: calc(1.275rem + 0.3vw);
+  margin:0px;
+  letter-spacing:-0.2px;
+}
+input[type="range"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width:15rem;
+  outline:none;
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  background-color: transparent;
+  pointer-events: none; 
+}
+input[type="checkbox"]{
+  /* appearance: none;
+  outline: none;
+  border:none;
+  height:100%;
+  width:100%;
+  font-size: 1.5em;; */
+  /* display: none; */
+}
+h3,h6{
+  margin:0;padding:0;
+}
+
+/* budget */
+input[type="number"]{
+  appearance: none;
+  border:none;
+  outline: none;
+}   
+
+h4{
+  text-align: center;
+}
+/* 
+h1{
+  font-size: 2.5rem !important;
+} */
+input[type="range"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width:15rem;
+  outline:none;
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  margin:auto;
+  background-color: transparent;
+  pointer-events: none; 
+}
+input[type="text"]{
+  appearance: none;
+  outline: none;
+  border:none;
+  height:100%;
+  width:100%;
+  font-size: 1.5em;;
+}

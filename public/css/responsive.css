@@ -1,0 +1,59 @@
+
+@media only screen and (max-width: 1400px) {
+    .component_6 #blue_container .text-section #compo_head_6-2{
+         position:relative;left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main_container .second_container{
+        display: none;;
+    }
+    .main_container .second_container_phone{
+        display: block;
+    }
+    .main_container .first_container .image{
+        border-radius: 0px 0px 22px 22px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .component_6{
+        display: none;;
+    }
+    .component_6_phone{
+        display:block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .text-section p{
+        visibility: hidden;
+        display:none;
+    }
+    #component_3 .image-working{
+        background-image: url('./../images/phone-how_it_works.png')  ;
+        display: block;
+        margin:auto;
+        background-position: center;
+    }
+    
+    #componet_04media{
+        flex-direction: column;
+    }
+    #componet_05media{
+        flex-direction: column;
+    }
+    #blue_container{
+        flex-direction: column;
+        height: 70vh !important;
+    }
+
+
+    .component_6{
+        display: none;;
+    }
+    .component_6_phone{
+        display:block;
+    }
+  }
+

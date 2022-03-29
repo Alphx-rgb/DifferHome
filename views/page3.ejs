@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+  <base href="../">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/page3.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet"href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+      <!-- Navbar Logo -->
+      <div class="logo">
+        <!-- Logo Placeholder for Inlustration -->
+        <a href="#home">
+          <!-- <i class="fa fa-angellist logo"> -->
+          </i><b> Differ<strong>Home</strong></b>
+        </a>
+      </div>
+
+      <!-- Navbar Links -->
+
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <!--
+            -->
+        <li><a href="#about">About</a></li>
+        <!--
+                -->
+        <li><a href="#services">Services</a></li>
+        <!--
+-->
+        <li><a href="#contact">Contact US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Menu Icon -->
+  <div class="menuIcon">
+    <span class="icon icon-bars"></span>
+    <span class="icon icon-bars overlay"></span>
+  </div>
+
+
+  <div class="overlay-menu" style="z-index:9;">
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact US</a></li>
+      <li><a href="#services">Services</a></li>
+    </ul>
+  </div>
+
+
+  <div class="container main-container">
+    <div id="map" class="map">
+      <!-- <div class="circle checkbox">  <input class="map-button" type="checkbox" id="toggle" name="toggle">
+      <label for="toggle"></label>
+      </div> -->
+      <!-- <div class="expand-img "><img src="./expand.png" alt=""></div> -->
+      <!-- <div class="shrink-img hide">
+        <img src="./shrink.png" alt="">
+      </div> -->
+    </div>
+
+    <div class="images">
+      <img src="./images/<%=product.images[0]%>" class="main-image" alt="">
+      <div class="side-images">
+        <img src="./images/<%=product.images[1]%>" alt="" class="imgs">
+        <img src="./images/<%=product.images[2]%>" alt="" class="imgs">
+        <img src="./images/<%=product.images[3]%>" alt="" class="imgs">
+        <img src="./images/<%=product.images[4]%>" alt="" class="imgs">
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+  <div class="details container2">
+    <button class="btn btn-success request-btn">Request Call</button>
+    <h1>
+      <%=product.name%>
+    </h1>
+    <p><i class="fas fa-thumbtack"></i>
+      <%=product.locality%>
+        <%=product.city%>
+          <%=product.state%>, <%=product.postal%>
+    </p>
+
+
+    <div class="detail-box">
+      <div class="small-detail">
+        <p><i class="fas fa-bed tags"></i>
+          <%=product.bedroom%> Bedroom
+        </p>
+      </div>
+      <div class="small-detail">
+        <p><i class="fas fa-bath tags"></i>
+          <%=product.bathroom%> Bathroom
+        </p>
+      </div>
+      <div class="small-detail">
+        <p><i class="fas fa-chart-area tags"></i> Area : <%=product.area%> sq ft.</p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-vector-square tags"></i> Carpet: <%=product.area%> sq ft.</p>
+      </div>
+      <div class="small-detail">
+        <p><i class="fas fa-tags tags"></i> Price: ₹ <%=product.price%> lacs</p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-car tags"></i>Price Inclusive all taxes:
+          <%if(product.taxIncluded){%>
+            Yes
+            <%}else{%>
+              No
+              <%}%>
+        </p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-exchange-alt tags"></i> Negociable:
+          <%if(product.negotiable){%>
+            Yes
+            <%}else{%>
+              No
+              <%}%>
+        </p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-tint tags"></i> Water Supply: Yes</p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-plug tags"></i> Electric Supply: Yes</p>
+      </div>
+      <div class="small-detail other-details">
+        <p><i class="fas fa-balance-scale tags"></i></i> DA Resistered: Yes</p>
+      </div>
+
+    </div>
+    <button class="btn btn-warning more-btn">More Details +</button>
+    <button class="btn btn-warning less-btn">Less Details -</button>
+  </div>
+
+
+  <!-- <div class="container floor-map">
+    <h1>Floor Plan</h1>
+    <div class="floor-row">
+      <div class="col-lg-4 floor-map-img"></div>
+      <div class="col-lg-4 floor-map-img"></div>
+      <div class="col-lg-4 floor-map-img"></div>
+    </div>
+  </div> -->
+
+
+  <!-- footer mobile view -->
+  <footer class="footer">
+    <div class="icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <p class="company-name">
+        DifferHome &copy; 2021, ALL Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+  <script src="./js/map3.js" lat="<%=product.xc%>" long="<%=product.yc%>"></script>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/page3.js"></script>
+</body>
+
+</html>

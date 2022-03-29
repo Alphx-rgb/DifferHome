@@ -1,138 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/gallery.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/carousel.css">
-  <meta name="description" content="Build house,Construct house,Buy plot,Sell house,Refurbish or Other services in Rajasthan,hariyana and northern India. ">
-    
-  <title>Differ Home</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- myCSS -->
+  <link rel="stylesheet" href="./css/component_3.css">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
+    <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/main_container.css">
+  <link rel="stylesheet" href="./css/searchbarh.css">
+  <link rel="stylesheet" href="./css/general_this.css">
+  <link rel="stylesheet" href="./css/searchbar_2.css">
+  <link rel="stylesheet" href="./css/component_4.css">
+  <link rel="stylesheet" href="./css/component_6.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Hello, world!</title>
 </head>
 
 <body>
-
-  <%- include('partials/nav') %>
-
-  <!-- -------------------------------nav-------------------------------------- -->
-
-  <!--Slider-->
-  <div id="slider">
-    <div class="slide slide1">
-      <a href="/"></a>
-    </div>
-
-    <div class="slide slide2">
-      <a href="/construction">
-        <div class="center_anchor">
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+            <!-- Logo Placeholder for Inlustration -->
+            <a href="#home">
+                <!-- <i class="fa fa-angellist logo"> -->
+                </i><b> Differ<strong>Home</strong></b></a>
         </div>
-      </a>
+
+        <!-- Navbar Links -->
+
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <!--
+            -->
+            <li><a href="#about">About</a></li>
+            <!--
+                -->
+            <li><a href="#services">Services</a></li>
+            <!--
+-->
+            <li><a href="#contact">Contact US</a></li>
+        </ul>
     </div>
+</nav>
 
-    <div class="slide  slide3"><a href="/services">
-        <div class="center_anchor">
-        </div>
-      </a>
-    </div>
 
-    <div class="slide  slide4"> <a href="/buy-plot">
-        <div class="center_anchor">
-        </div>
-      </a>
-    </div>
-    <div class="slide  slide5  "> <a href="/resell">
-        <div class="center_anchor">
-        </div>
-      </a>
-    </div>
-    <!--Controlling arrows-->
-    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
-    </span>
-    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" id="next" aria-hidden="true"></i>
-    </span>
-  </div>
-
-<!------------------------------------------form---------------------------->
-<div class="form-box2">
-  <h1 class="ribbon">
-    <strong class="ribbon-content">Book a free Consultation</strong>
-  </h1>
-
-  <form action="/firstform" method="POST">
-    <label>*Name</label>
-    <input type="text" name="name" required>
-    <label>*Phone</label>
-    <input type="text" name="phone" required><br>
-    <label>Email</label>
-    <input type="text" name="email"><br>
-    <label>*Address</label>
-    <input type="text" name="address" required><br>
-    <button type="submit" class="btn btn-warning btn-lg">Book Now!</button>
-
-  </form>
+<!-- Menu Icon -->
+<div class="menuIcon">
+    <span class="icon icon-bars"></span>
+    <span class="icon icon-bars overlay"></span>
 </div>
-  <!-- --------------------------services--------------------------------------------- -->
 
-  <div class="services container" id="services">
-    <div class="row">
-      <h1> OUR SERVICES</h1>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="service-item item1">
-          <div class="inner">
-          <a href="/construction">  <h2><b>Construction</b></h2></a>
-          </div>
-        </div>
+
+<div class="overlay-menu" style="z-index:9;">
+    <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact US</a></li>
+        <li><a href="#services">Services</a></li>
+    </ul>
+</div>
+
+
+  <div class="main_container">
+    <div class="first_container">
+      <div class="image">
+        <!-- <img src="./images/carousel.jpg" alt=""> -->
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="service-item item2">
-          <div class="inner">
-            <a href="/buy-plot"><h2><b>Buy Plot</b></h2></a>
+      <div class="second_container">
+        <form method="get" action="./page2">
+          <div class="cnt my-0 mb-5 pt-0 px-3 pb-1  searchbar">
+            <div class="part_a" id="part_aa" style="position:relative;display:flex;width:50%;margin:auto;">
+              <div class="container bg-light options">
+                <div class="row">
+                  <div  class="col-5 option_a" id="appartment-option">
+                    <label for="" class="box_bkcgrd m-0"></label>
+                    <input type="checkbox" id="Apartment" name="Appartment" value="Appartment">
+                    <div class="box_part_a"></div>
+                    <label for="" class="m-0">Apartment</label>
+                  </div>
+                  <div class="col-2 option_a">
+                    <label for="villa" class="box_bkcgrd m-0"></label>
+                    <input type="checkbox" id="villa" name="villa" value="villa">
+                    <div class="box_part_a"></div>
+                    <label for="villa" class="m-0">Villa</label>
+                  </div>
+                  <div class="col-5 option_a" id="plot-option">
+                    <label for="plot" class="box_bkcgrd m-0"></label>
+                    <input type="checkbox" id="plot" name="plot" value="plot">
+                    <div class="box_part_a"></div>
+                    <label for="Apartment" class="m-0">Plot/Land</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home px-3 bg-light">
+              <div class="row">
+                <div class="col-3">
+                  <div class="form-group">
+                    <label for="usr" class="font-weight-bold">City:</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>City...</option>
+                      <option value="city-1">City</option>
+                      <option value="city-1">City-1</option>
+                      <option value="city-2">City-2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="form-group">
+                    <label for="usr" class="font-weight-bold">Location:</label>
+                    <input type="text" class="form-control" id="usr" placeholder="Enter city, state, locality, pincode">
+                  </div>
+                </div>
+                <div class="col-2 button">
+                  <div class="form-group">
+                    <label class="font-weight-bold"></label>
+                    <!-- <input type="text" class="form-control" id="usr" -->
+                    <!-- placeholder="Enter city, state, locality, pincode"> -->
+                    <button type="submit"
+                      class="btn-outline-primary rounded search_button px-2 py-auto my-auto w-50"><span
+                        role="button">Search</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part_b pt-2 px-3 pb-2">
+              <div class="row">
+                <div class="col-4">
+                  <div style="width:fit-content;">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="residential p-1 d-flex">
+                          <div>
+                            <text>Residential</text>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div style="display:flex;position: relative;">
+                          <label class="switch">
+                            <input type="checkbox" name="Residential">
+                            <span class="slider"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="residential p-1 d-flex">
+                          <div>
+                            <text>Commerical</text>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div style="display:flex;position: relative;">
+                          <label class="switch">
+                            <input type="checkbox" name="Commerical">
+                            <span class="slider"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="residential p-1">
+                        <div>
+                          <text>Bedrooms</text>
+                        </div>
+                      </div>
+                      <div class="boxes pl-2">
+                        <div class="box" id="box1">
+                          <label for="opt1" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt1" name="Bedrooms" value="1">
+                          <div class="box_cover"></div>
+                          <label>1</label>
+                        </div>
+                        <div class="box" id="box2">
+                          <label for="opt2" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt2" name="Bedrooms" value="2">
+                          <div class="box_cover"></div>
+                          <label>2</label>
+                        </div>
+                        <div class="box" id="box3">
+                          <label for="opt3" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt3" name="Bedrooms" value="3">
+                          <div class="box_cover"></div>
+                          <label>3</label>
+                        </div>
+                        <div class="box" id="box4">
+                          <label for="opt4" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt4" name="Bedrooms" value="4">
+                          <div class="box_cover"></div>
+                          <label>4</label>
+                        </div>
+                        <div class="box" id="box5">
+                          <label for="opt5" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt5" name="Bedrooms" value="5">
+                          <div class="box_cover"></div>
+                          <label>5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="residential p-1">
+                        <div>
+                          <text>Bathrooms</text>
+                        </div>
+                      </div>
+                      <div class="boxes pl-2">
+                        <div class="box" id="box6">
+                          <label for="opt6" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt6" name="Bathrooms" value="1">
+                          <div class="box_cover"></div>
+                          <label for="opt6">1</label>
+                        </div>
+                        <div class="box" id="box7">
+                          <label for="opt7" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt7" name="Bathrooms" value="2">
+                          <div class="box_cover"></div>
+                          <label for="opt7">2</label>
+                        </div>
+                        <div class="box" id="box8">
+                          <label for="opt8" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt8" name="Bathrooms" value="3">
+                          <div class="box_cover"></div>
+                          <label for="opt8">3</label>
+                        </div>
+                        <div class="box" id="box9">
+                          <label for="opt9" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt9" name="Bathrooms" value="4">
+                          <div class="box_cover"></div>
+                          <label for="opt9">4</label>
+                        </div>
+                        <div class="box" id="box10">
+                          <label for="opt10" class="box_bkcgrd"></label>
+                          <input type="checkbox" id="opt10" name="Bathrooms" value="4+">
+                          <div class="box_cover"></div>
+                          <label for="opt10">4+</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div>
+                    <div class="residential p-1 d-flex">
+                      <div>
+                        <text>Budget</text>
+                      </div>
+                    </div>
+                    <!-- slider -->
+                    <div class="px-2" style="display: flex;align-items: center;">
+                      <div>
+                        <!-- slider -->
+                        <div class="container slider-tracks">
+                          <div class="slider-track"></div>
+                          <input type="range" id="slider-1" min="0" max="100" value="30" oninput="slideOne()">
+                          <input type="range" min="0" max="100" value="70" id="slider-2" name="budget"
+                            oninput="slideTwo()">
+                        </div>
+                      </div>
+                      <div style="margin-left:50%;">
+                        <div class="values">
+                          <div class="value_box px-1">
+                            <text-sm>Min:</text-sm>
+                            <div class="price">
+                              $<span>
+                                <input oninput="abc()" type="number" name="range1" id="range1" value="30">
+                              </span>
+                            </div>
+                          </div>
+                          <div style="max-height:100%;margin:1%;font-size: 1.4rem;">
+                            <span>&nbsp&dash;</span>
+                          </div>
+                          <div class="value_box px-1">
+                            <text-sm>Max:</text-sm>
+                            <div class="price">
+                              $<span>
+                                <input oninput="abc()" type="number" name="range2" id="range2" value="70">
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="residential p-1 d-flex">
+                      <div>
+                        <text>Area</text>
+                      </div>
+                    </div>
+                    <!-- slider -->
+                    <div class="px-2" style="display: flex;align-items: center;">
+                      <div>
+                        <!-- slider -->
+                        <div class="container slider-tracks">
+                          <div class="slider-track"></div>
+                          <input type="range" id="range1_area" min="0" max="100" value="30" oninput="slider_area1()">
+                          <input type="range" min="0" max="100" value="70" id="range2_area" name="budget"
+                            oninput="slider_area2()">
+                        </div>
+                      </div>
+                      <div style="margin-left:50%;">
+                        <div class="values">
+                          <div class="value_box px-1">
+                            <text-sm>Min:</text-sm>
+                            <div class="price">
+                              $<span>
+                                <input oninput="abc_area()" type="number" name="range1" id="range1_box" value="30">
+                              </span>
+                            </div>
+                          </div>
+                          <div style="max-height:100%;margin:1%;font-size: 1.4rem;">
+                            <span>&nbsp&dash;</span>
+                          </div>
+                          <div class="value_box px-1">
+                            <text-sm>Max:</text-sm>
+                            <div class="price">
+                              $<span>
+                                <input oninput="abc_area()" type="number" name="range2" id="range2_box" value="70">
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="service-item item3">
-          <div class="inner">
-            <a href="/services"><h2><b>Renovation</b></h2></a>
+      <div class="second_container_phone mb-4">
+        <div class="search">
+          <div class="icon">
+            <i class="fa fa-search"></i>
           </div>
+          <input type="text" name="address" placeholder="Enter city, state, locality, pincode">
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="service-item item4">
-          <div class="inner">
-            <a href="/resell"><h2><b>Resell</b></h2></a>
-          </div>
+        <div class="filter_page">
+
         </div>
       </div>
     </div>
   </div>
-
-  <!-- -------------------------------------sec 3-------------------- -->
-
-  <%- include('partials/middle') %>
-  <script>
-     
-function alertFunc() {
-  document.getElementById("next").click();
-  }
-  var myVar = setInterval("func()", 5000);
+  </div>
 
 
-var func = alertFunc;
 
-  </script>
-  <script src="js/jquery.min.js"></script>
-  <script src="./js/nav.js"></script>
-  <script src="./js/carousel.js"></script>
+
+
+
+  <!-- component 03 || How it Works -->
+  <div id="component_3">
+    <!-- <img src="./images/component_3.jpg" class="img_work" > -->
+    <!-- <div class=""> -->
+    <div id="compo_head_3" class="w-100 my-3" style="display: flex;align-items: center;justify-content: center;">
+      <h2 class="text-center" style="font-weight: 700;">How it</h2>
+      <h2 class="text-center" style="color:#254E7B;font-weight: 700;">&nbspWorks?</h2>
+    </div>
+    <div class="my-1 working" style="display: flex;align-items: center;justify-content: center;">
+      <div class="cont" style="display:flex">
+        <div class="circle" id="c1">
+          <div>1</div>
+          </div>
+        <div class="line-time" id="t1"></div>
+      </div>
+      <!-- </div> -->
+      <div class="cont" style="display:flex">
+        <div class="circle" id="c2"><div>2</div>
+      </div>
+        <div class="line-time" id="t2"></div>
+      </div>
+      <div class="cont" style="display:flex">
+        <div class="circle" id="c3"><div>3</div>
+      </div>
+        <div class="line-time" id="t3"></div>
+      </div>
+      <div class="cont" style="display:flex">
+      <div class="circle" id="c4"><div>4</div>
+    </div>
+      </div>
+    </div>
+    <div class="working-text" style="">
+      <div style="display: flex;flex-direction: column;width: 250px;position: relative;">
+        <h5 class="my-2" id="h-1" style="font-weight: 600;color:#254E7B ;">Easy Search</h5>
+        <div class="text-section">
+          <p id="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="text" style="display: flex;flex-direction: column;width:250px;position: relative;">
+        <h5 class="my-2" id="h-2" style="font-weight: 600;color:#254E7B ;">Easy Search</h5>
+        <div class="text-section">
+          <p id="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="text" style="display: flex;flex-direction: column;width:250px;position: relative;">
+        <h5 class="my-2" id="h-3" style="font-weight: 600;color:#254E7B ;">Easy Search</h5>
+        <div class="text-section">
+          <p id="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="text" style="display: flex;flex-direction: column;width:250px;position: relative;">
+        <h5 class="my-2" id="h-4" style="font-weight: 600;color:#254E7B ;">Easy Search</h5>
+        <div class="text-section">
+          <p id="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="image-working mx-auto">
+      <!-- <img src="./images/phone-how_it_works.png" alt=""> -->
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+
+  <!-- component 04 || Why choose us -->
+  <div id="component_4" style="height: 80vh;">
+    <div id="compo_head_3" class="w-100 my-3" style="display: flex;align-items: center;justify-content: center;">
+      <h2 class="text-center" style="font-weight: 700;color:#254E7B;">Why choose</h2>
+      <h2 class="text-center">&nbspus</h2>
+    </div>
+    <div class="container my-3" id="componet_04media"
+      style="display: flex;align-items: center;justify-content: center;">
+      <div class="card mx-5" style="width: 19rem;border: none;">
+        <img src="./images/component_4_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="text-align: center;">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <div id="compo_head_3" class="w-100 my-3" style="display: flex;align-items: center;justify-content: center;">
+            <h5 class="text-center" style="font-weight: 700;color:#254E7B;">Looking</h5>
+            <h5 class="text-center">&nbspFor</h5>
+          </div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="card mx-5" style="width: 19rem;border: none;">
+        <img src="./images/component_4_2.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="text-align: center;">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <div id="compo_head_3" class="w-100 my-3" style="display: flex;align-items: center;justify-content: center;">
+            <h5 class="text-center" style="font-weight: 700;color:#254E7B;">Looking</h5>
+            <h5 class="text-center">&nbspFor</h5>
+          </div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+      <div class="card mx-5" style="width: 19rem;border: none;">
+        <img src="./images/component_4_3.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="text-align: center;">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <div id="compo_head_3" class="w-100 my-3" style="display: flex;align-items: center;justify-content: center;">
+            <h5 class="text-center" style="font-weight: 700;color:#254E7B;">Looking</h5>
+            <h5 class="text-center">&nbspFor</h5>
+          </div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- component 05 || Properties -->
+    <div class="component_5">
+      <div class="grey_line" style="background-color: #F3F3F3;height: 3rem;">
+        <h4 class="px-5" style="height: 3rem;display: flex;align-items: center;">Properties we brings to you</h4>
+      </div>
+      <div class="container my-5" id="componet_05media"
+        style="display: flex;align-items: center;justify-content: center;text-align: center;">
+        <div class="mx-2" style="width: 18rem;">
+          <img src="./images/component_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example</p>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 18rem;">
+          <img src="./images/component_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example</p>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 18rem;">
+          <img src="./images/component_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example</p>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 18rem;">
+          <img src="./images/component_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example</p>
+          </div>
+        </div>
+        <div class="card mx-2" style="width: 18rem;">
+          <img src="./images/component_5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- component 06 || Properties -->
+    <div class="component_6">
+      <div id="blue_container">
+        <img src="./images/component_6.jpg" alt="" class="mx-5" style="height: 50vh;">
+        <div class="text-section">
+          <div class="compo_head_6">
+            <h2 class="text-center" style="color: gray;">Your</h2>
+            <h2 class="text-center" style="color:#254E7B">&nbspDream Home</h2>
+            <h2 class="text-center" style="color: gray;">&nbspis right here</h2>
+          </div>
+          <div class="compo_head_6" id="compo_head_6-2">
+            <h2 class="text-center" style="color: gray;">We bring the</h2>
+            <h2 class="text-center" style="color:#254E7B">&nbspBest</h2>
+            <h2 class="text-center" style="color: gray;">&nbspfor you</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="component_6_phone container">
+      <div id="blue_container">
+        <div class="text">
+          Your <span style="color: #254E7B">Dream Home</span> is right here, We bring the <span
+            style="color: #254E7B">Best</span> for You
+        </div>
+        <img src="./images/component_6.jpg" alt="" class="mx-5" style="height: 50vh;">
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <p class="company-name">
+              DifferHome &copy; 2021, ALL Rights Reserved
+          </p>
+      </div>
+  </footer>
+    <!-- myJS -->
+    <script src="./js/component_3.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="./js/searchbarh.js"></script>
+    <script src="./js/filterh.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

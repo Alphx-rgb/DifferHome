@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+        type="text/css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>  
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    
+    <title>Document</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Admin Portal</h1>
+    <br><br>
+       <form action="./admin" method="post" enctype="multipart/form-data"> 
+        <label for="name"><h4>Name of Building</h4></label>
+           <input type="text" name="name" id="name">
+           
+           <br><br>
+           <select name="type1" id=""  class="form-select" >
+            <option value="appartment">Appartment</option>
+            <option value="plot/land">Plot/land</option>
+            <option value="villa">Villa</option>
+           </select>
+
+           <select name="type2" id=""  class="form-select" > 
+               <option value="residential">residential</option>
+               <option value="commercial">commercial</option>
+           </select>
+        
+        <select name="bedroom" id=""  class="form-select" >
+            <option value="0">bedroom</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="bathroom" id=""  class="form-select" >
+            <option value="0">bathroom</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <input type="number" name="price" id="price">
+        <label for="price">Price in lacs</label>
+        <br><br>
+        <input type="number" name="area" id="area">
+        <label for="area">Area in sq.feet </label>
+        <br>
+        <br>
+        <input type="checkbox" name="negotiable" value="1" id="negotiable">
+        <label for="negotiable">price negotiable</label>
+       <br><br>
+       <input type="radio" name="tax" value="1" id="tax">
+        <label for="tax" class="tax1">Tax and gov. charg excluded</label>
+        <input type="radio" name="tax" value="0" id="tax1">
+        <label for="tax1">All incusive tax</label> 
+
+<br><br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Country</h4>
+              <select name="country" class="countries form-control" id="countryId">
+            <option value="">Select Country</option>
+        </select>
+      
+            </div>
+            <div class="col-sm-4">
+              <h4>State</h4>
+              <select name="state" class="states form-control" id="stateId">
+            <option value="">Select State</option>
+        </select>
+            </div>
+            <div class="col-sm-4">
+              <h4>City</h4>        
+              <select name="city" class="cities form-control" id="cityId">
+            <option value="">Select City</option>
+        </select>
+            </div>
+          </div>
+        </div>
+<br>
+        <div class="address">
+            <input type="text" name="code" id="code">
+            <label for="code">Postal Code</label>
+
+            <input type="text" name="locality" id="locality">
+            <label for="locality">locality</label>
+
+            <input type="text" name="landmark" id="landmark" placeholder="Optional">
+            <label for="landmark">landmark</label>
+        </div>
+<br><br>
+    <div class="images">
+        <h3>Upload Images</h3>
+        <input type="file" name="img1" multiple="multiple" id="img1">
+        
+    </div>
+    <!-- <button class="btn btn-sm btn-info" type="button">Add More+</button> -->
+<br>
+<div class="map" id="map">
+        
+</div>
+<input type="hidden" name="xc" id="xc" value="1">
+<input type="hidden" name="yc" id="yc">
+<br>
+    <button type="submit" class="btn btn-success ">Add New +</button>
+</form>
+</div>
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>
+<script src="./js/location.js"></script>
+<script src="./js/more.js"></script>
+<script src="./js/map.js"></script>
+</html>
