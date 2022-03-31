@@ -52,8 +52,8 @@ app.use(function (req, res, next) {
 
 const mongoose = require('mongoose');
 const { stringify } = require('querystring');
-Uri='mongodb://shivang:tyagi25dec@cluster0-shard-00-00.iv8vu.mongodb.net:27017,cluster0-shard-00-01.iv8vu.mongodb.net:27017,cluster0-shard-00-02.iv8vu.mongodb.net:27017/homesDB?ssl=true&replicaSet=atlas-2hn4x7-shard-0&authSource=admin&retryWrites=true&w=majority'
-// Uri="mongodb://localhost:27017/homesDB";
+// Uri='mongodb://shivang:tyagi25dec@cluster0-shard-00-00.iv8vu.mongodb.net:27017,cluster0-shard-00-01.iv8vu.mongodb.net:27017,cluster0-shard-00-02.iv8vu.mongodb.net:27017/homesDB?ssl=true&replicaSet=atlas-2hn4x7-shard-0&authSource=admin&retryWrites=true&w=majority'
+Uri="mongodb://localhost:27017/homesDB";
 mongoose.connect(Uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
@@ -192,14 +192,36 @@ app.post('/admin', uploadMultiple ,function(req,res){
     });
 })
 
+//filter--------------------------
+
+app.post('/',function(req,res){
+    console.log(req.body);
+
+    Product.find({
+        city:req.body.city,
+        bedroom:{$in:req.body.bedrooms},
+        bathroom:{$in:req.body.bathrooms},
+        price:{$gt:req.body.range1[0],$lt:req.body.range2[0]},
+        type1:{$in:req.body.type1},
+        type2:{$in:req.body.type2},
+        area:{$gt:req.body.range1[1],$lt:req.body.range2[1]}
+
+    },function(err,products){
+        res.render('page2',{products:products});
+    }).sort({x:-1}).limit(6);
+})
+
+
+
 app.get('/page2',function(req,res){
+    console.log(req.body)
     Product.find({},function(err,products){
         res.render('page2',{products:products});
     }).sort({x:-1}).limit(6);
 })
 
 app.get('/page3/:id',function(req,res){
-    Product.findOne({"_id":req.params.id},function(err,product){
+    Product.findOne({"_id":req.params.id,},function(err,product){
         res.render('page3',{product:product});
     });
 })

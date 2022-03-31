@@ -87,6 +87,9 @@ h5{
 .sqfeet{
   font-size: 0.8rem;
   font-weight: bold;
+  position: relative;
+  bottom: 0.9rem;
+  
 }
 .item{
   background-color: white;

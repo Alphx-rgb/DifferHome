@@ -72,12 +72,12 @@
 
 
 
-
+    <form method="post" action="./">
     <!-- filter -->
     <div class="container-out">
         <div class="row">
             <div class="col-lg-3">
-                <form method="get">
+           
                     <div class="container1">
                         <div class="filter_section">
                             <h4 class="filter_h heading">Filters</h4>
@@ -89,7 +89,7 @@
                                         <div class="col-sm-4 ">
                                             <div class="option appartment">
                                                 <label for="Appartment" class="box_bkcgrd"></label>
-                                                <input type="checkbox" id="Appartment" name="Appartment" >
+                                                <input type="checkbox" id="Appartment" name="type1" value="appartment" >
                                                 <div class="box_cover"></div>
                                                 <div class="icon">
                                                     <i class="far fa-building"></i>
@@ -100,7 +100,7 @@
                                         <div class="col-sm-4 ">
                                             <div class="option appartment">
                                                 <label for="plot" class="box_bkcgrd"></label>
-                                                <input type="checkbox" id="plot" name="plot" >
+                                                <input type="checkbox" id="plot" name="type1" value="plot">
                                                 <div class="box_cover"></div>
                                                 <div class="icon">
                                                     <i style="width:auto" class="fas fa-home"></i>
@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="option villa">
                                             <label for="villa" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="villa" name="villa" >
+                                            <input type="checkbox" id="villa" name="type1" value="villa" >
                                             <div class="box_cover"></div>
                                             <div class="icon">
                                                 <i style="width:auto" class="fas fa-laptop-house"></i>
@@ -125,7 +125,7 @@
                                     <h5>Commercial</h5>
                                     <!-- Rounded switch -->
                                     <label class="switch">
-                                        <input type="checkbox" name="residential" >
+                                        <input type="checkbox" name="type2" value="commercial" >
                                         <span class="slider round"></span>
                                     </label>
                                 </div>
@@ -134,7 +134,7 @@
                                     <h5>Residential&ThinSpace; </h5>
                                     <!-- Rounded switch -->
                                     <label class="switch">
-                                        <input type="checkbox" name="residential2">
+                                        <input type="checkbox" name="type2" value="residential">
                                         <span class="slider round"></span>
                                     </label>
                                 </div>
@@ -148,18 +148,18 @@
                                             <span id="range1">
                                                 30
                                             </span>
-                                            <span class="lacs">&ThinSpace;L</span>
+                                            <span class="lacs">&ThinSpace;cr</span>
                                             <span class="dash">&dash;</span>
                                             <span id="range2">70</span>
-                                            <span class="lacs">&ThinSpace;L</span>
+                                            <span class="lacs">&ThinSpace;cr</span>
                                         </div>
                                     </div>
                                     <div class="containers containers1">
                                         <div class="slider-track"></div>
                                         <input type="range" id="slider-1" min="0" max="100" value="30"
-                                            name="budget_l_value" oninput="slideOne()">
+                                            name="range1" oninput="slideOne()">
                                         <input type="range" min="0" max="100" value="70" id="slider-2"
-                                            name="budget_2_value" oninput="slideTwo()">
+                                            name="range2" oninput="slideTwo()">
                                     </div>
 
                                 </div>
@@ -168,31 +168,31 @@
                                     <div class="options">
                                         <div class="box" id="box1">
                                             <label for="opt1" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt1" name="Bedrooms" value="1">
+                                            <input type="checkbox" id="opt1" name="bedrooms" value="1">
                                             <div class="box_cover"></div>
                                             <label>1</label>
                                         </div>
                                         <div class="box" id="box2">
                                             <label for="opt2" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt2" name="Bedrooms" value="2">
+                                            <input type="checkbox" id="opt2" name="bedrooms" value="2">
                                             <div class="box_cover"></div>
                                             <label>2</label>
                                         </div>
                                         <div class="box" id="box3">
                                             <label for="opt3" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt3" name="Bedrooms" value="3">
+                                            <input type="checkbox" id="opt3" name="bedrooms" value="3">
                                             <div class="box_cover"></div>
                                             <label>3</label>
                                         </div>
                                         <div class="box" id="box4">
                                             <label for="opt4" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt4" name="Bedrooms" value="4">
+                                            <input type="checkbox" id="opt4" name="bedrooms" value="4">
                                             <div class="box_cover"></div>
                                             <label>4</label>
                                         </div>
                                         <div class="box" id="box5">
                                             <label for="opt5" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt5" name="Bedrooms" value="5">
+                                            <input type="checkbox" id="opt5" name="bedrooms" value="5">
                                             <div class="box_cover"></div>
                                             <label>5</label>
                                         </div>
@@ -203,33 +203,33 @@
                                     <div class="options">
                                         <div class="box" id="box6">
                                             <label for="opt6" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt6" name="Bathrooms" value="1">
+                                            <input type="checkbox" id="opt6" name="bathrooms" value="1">
                                             <div class="box_cover"></div>
                                             <label for="opt6">1</label>
                                         </div>
                                         <div class="box" id="box7">
                                             <label for="opt7" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt7" name="Bathrooms" value="2">
+                                            <input type="checkbox" id="opt7" name="bathrooms" value="2">
                                             <div class="box_cover"></div>
                                             <label for="opt7">2</label>
                                         </div>
                                         <div class="box" id="box8">
                                             <label for="opt8" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt8" name="Bathrooms" value="3">
+                                            <input type="checkbox" id="opt8" name="bathrooms" value="3">
                                             <div class="box_cover"></div>
                                             <label for="opt8">3</label>
                                         </div>
                                         <div class="box" id="box9">
                                             <label for="opt9" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt9" name="Bathrooms" value="4">
+                                            <input type="checkbox" id="opt9" name="bathrooms" value="4">
                                             <div class="box_cover"></div>
                                             <label for="opt9">4</label>
                                         </div>
                                         <div class="box" id="box10">
                                             <label for="opt10" class="box_bkcgrd"></label>
-                                            <input type="checkbox" id="opt10" name="Bathrooms" value="4+">
+                                            <input type="checkbox" id="opt10" name="bathrooms" value="5">
                                             <div class="box_cover"></div>
-                                            <label for="opt10">4+</label>
+                                            <label for="opt10">5</label>
                                         </div>
                                     </div>
                                 </div>
@@ -239,14 +239,17 @@
                                             <h5>Area</h5>
                                         </div>
                                         <div class="values">
-                                            <span id="range">70</span>
+                                            <span id="range3">300</span>
+                                            <span class="sqfeet">&MediumSpace; Sq.ft.-</span>
+                                            <span id="range4">700</span>
                                             <span class="sqfeet">&MediumSpace; Sq.ft.</span>
                                         </div>
                                     </div>
                                     <div class="containers">
                                         <div class="slider-track"></div>
-                                        <input type="range" min="0" max="100" value="70" id="area" name="area"
-                                            oninput="slider_area()">
+                                        <input type="range" id="range1_area" name="range1" min="0" max="3000" value="300" oninput="slider_area1()">
+                                        <input type="range" min="0" max="3000" value="700" id="range2_area" name="range2"
+                                        oninput="slider_area2()">
                                     </div>
                                 </div>
                                 <div class="age">
@@ -268,6 +271,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="vl"></div>
                             <div class="button_filter">
                                 <div class="buttons">
@@ -282,7 +286,7 @@
                         </div>
 
                     </div>
-                </form>
+             
             </div>
             <div class="col-lg-9">
                 <!--Search Bar-->
@@ -292,27 +296,30 @@
 
                             <div class="searchbar">
                                 <div class="part1">
-                                    <!-- <div class="box"> -->
-                                        <!-- <select name="city" id="city">
-                                            <option>CITY</option>
-                                            <option value="c1">City-selected</option>
-                                            <option value="c1">City-selected</option>
-                                            <option value="c1">City-selected</option>
-                                            <option value="c1">City-selected</option>
-                                            <option value="c1">City-selected</option>
-                                        </select> -->
-                                    <!-- </div> -->
+                               
+                                   
+                                                <select name="country" class="countries form-control" id="countryId">
+                                              <option value="">Select Country</option>
+                                          </select>
+                                        
+                                     
+                                                <select name="state" class="states form-control" id="stateId">
+                                              <option value="">Select State</option>
+                                          </select>
+                                       
+                                                <select name="city" class="cities form-control" id="cityId">
+                                              <option value="">Select City</option>
+                                          </select>
+                                       
+                                
                                     <div class="search">
                                         <div class="icon">
                                             <i class="fa fa-search"></i>
                                         </div>
-                                        <input type="text" name="place" id="place"
-                                            placeholder="locality,area,pincode etc ">
+                                        
                                     </div>
                                     <div class="search_button">
-                                        <div class="search_button_search" id="search_button_search" onClick="submit()">
-                                            Search
-                                        </div>
+                                        <button type="submit" class="btn btn-primary">Search</button>
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +328,7 @@
                     </div>
                    <div class="row mdet">
                         <div class="result-count">
-                            <p>Result: 54 properties found</p>
+                            <p>Result:  <%=products.length%> properties found</p>
                             <div class="sort-by">
                                 <i class="fas fa-filter"></i> 
                                 <select name="" id="">
@@ -332,158 +339,48 @@
                         </div>
                    </div>
                 </div>
-                <div class="row cards">
+        <%if(typeof products!='undefined'){%>
 
-    <% for(var i=0;i<products.length;i++){%>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img src="./images/<%=products[i].images[0]%>" class="main-image" alt="">
-                                <div class="details">
-                                    <h4><%=products[i].name%></h4>
-                                    <p><%=products[i].locality%> <%=products[i].city%> <%=products[i].state%>, <%=products[i].postal%></p>
-                                    <div class="icon-details">
-                                        <div class="bedroom">
-                                            <i class="fas fa-bed tags"></i>
-                                            <p><%=products[i].bedroom%> Bedroom</p>
+                    <div class="row cards">
+
+        <% for(var i=0;i<products.length;i++){%>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <img src="./images/<%=products[i].images[0]%>" class="main-image" alt="">
+                                    <div class="details">
+                                        <h4><%=products[i].name%></h4>
+                                        <p><%=products[i].locality%> <%=products[i].city%> <%=products[i].state%>, <%=products[i].postal%></p>
+                                        <div class="icon-details">
+                                            <div class="bedroom">
+                                                <i class="fas fa-bed tags"></i>
+                                                <p><%=products[i].bedroom%> Bedroom</p>
+                                            </div>
+                                            <div class="bathroom">
+                                                <i class="fas fa-bath tags"></i>
+                                                <p><%=products[i].bathroom%> Bathroom</p>
+                                            </div>
+                                            <div class="area">
+                                                <i class="fas fa-chart-area tags"></i>
+                                                <p><%=products[i].area%> sq.ft</p>
+                                            </div>
                                         </div>
-                                        <div class="bathroom">
-                                            <i class="fas fa-bath tags"></i>
-                                            <p><%=products[i].bathroom%> Bathroom</p>
-                                        </div>
-                                        <div class="area">
-                                            <i class="fas fa-chart-area tags"></i>
-                                            <p><%=products[i].area%> sq.ft</p>
+                                        <div class='card-bottom'>
+                                            <div class="price">₹ <%=products[i].price%> lacs</div>
+                                            <a href="./page3/<%=products[i]._id%>"><button class="btn btn-sm btn-success card-btn" > More Details</button></a>
                                         </div>
                                     </div>
-                                    <div class='card-bottom'>
-                                        <div class="price">₹ <%=products[i].price%> lacs</div>
-                                        <a href="./page3/<%=products[i]._id%>"><button class="btn btn-sm btn-success card-btn" > More Details</button></a>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
-    <%}%>
+        <%}%>
 
-                    <!-- <div class="col-lg-4">
-                        <div class="card">
-                            <div class="main-image">
-
-                            </div>
-                            <div class="details">
-                                <h4>Name of house</h4>
-                                <p>location and, pin</p>
-                                <div class="icon-details">
-                                    <div class="bedroom">
-                                        <i class="fas fa-bed tags"></i>
-                                        <p>3 Bedroom</p>
-                                    </div>
-                                    <div class="bathroom">
-                                        <i class="fas fa-bath tags"></i>
-                                        <p>2 Bathroom</p>
-                                    </div>
-                                    <div class="area">
-                                        <i class="fas fa-chart-area tags"></i>
-                                        <p>1020 sq.ft</p>
-                                    </div>
-                                </div>
-                                <div class='card-bottom'>
-                                    <div class="price">₹ 20-30 lacs</div>
-                                    <button class="btn btn-sm btn-success card-btn"> More Details</button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="main-image">
-
-                            </div>
-                            <div class="details">
-                                <h4>Name of house</h4>
-                                <p>location and, pin</p>
-                                <div class="icon-details">
-                                    <div class="bedroom">
-                                        <i class="fas fa-bed tags"></i>
-                                        <p>3 Bedroom</p>
-                                    </div>
-                                    <div class="bathroom">
-                                        <i class="fas fa-bath tags"></i>
-                                        <p>2 Bathroom</p>
-                                    </div>
-                                    <div class="area">
-                                        <i class="fas fa-chart-area tags"></i>
-                                        <p>1020 sq.ft</p>
-                                    </div>
-                                </div>
-                                <div class='card-bottom'>
-                                    <div class="price">₹ 20-30 lacs</div>
-                                    <button class="btn btn-sm btn-success card-btn"> More Details</button>
-                                </div>
-                            </div>
+           
+                    <%}else{%>
+                        <div class="container" style="text-align: center;color: darkcyan;margin-top: 20rem;">
+                            <h1>NO RESULTS FOUND</h1>
                         </div>
-                    </div>
+                     <% } %>
 
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="main-image">
-
-                            </div>
-                            <div class="details">
-                                <h4>Name of house</h4>
-                                <p>location and, pin</p>
-                                <div class="icon-details">
-                                    <div class="bedroom">
-                                        <i class="fas fa-bed tags"></i>
-                                        <p>3 Bedroom</p>
-                                    </div>
-                                    <div class="bathroom">
-                                        <i class="fas fa-bath tags"></i>
-                                        <p>2 Bathroom</p>
-                                    </div>
-                                    <div class="area">
-                                        <i class="fas fa-chart-area tags"></i>
-                                        <p>1020 sq.ft</p>
-                                    </div>
-                                </div>
-                                <div class='card-bottom'>
-                                    <div class="price">₹ 20-30 lacs</div>
-                                    <button class="btn btn-sm btn-success card-btn"> More Details</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="main-image">
-
-                            </div>
-                            <div class="details">
-                                <h4>Name of house</h4>
-                                <p>location and, pin</p>
-                                <div class="icon-details">
-                                    <div class="bedroom">
-                                        <i class="fas fa-bed tags"></i>
-                                        <p>3 Bedroom</p>
-                                    </div>
-                                    <div class="bathroom">
-                                        <i class="fas fa-bath tags"></i>
-                                        <p>2 Bathroom</p>
-                                    </div>
-                                    <div class="area">
-                                        <i class="fas fa-chart-area tags"></i>
-                                        <p>1020 sq.ft</p>
-                                    </div>
-                                </div>
-                                <div class='card-bottom'>
-                                    <div class="price">₹ 20-30 lacs</div>
-                                    <button class="btn btn-sm btn-success card-btn"> More Details</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
             </div>
         </div>
         <div class="row">
@@ -493,7 +390,7 @@
             </div>
         </div>
     </div>
-
+</form>
     <!-- footer mobile view -->
     <footer class="footer">
         <div class="icons">
@@ -507,16 +404,17 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script> -->
     <!-- <script src="navbar.js"></script> -->
-
+    <script src="./js/location.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/filter.js"></script>
+
 </body>
 
 </html>

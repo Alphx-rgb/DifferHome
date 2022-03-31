@@ -86,26 +86,26 @@
         <!-- <img src="./images/carousel.jpg" alt=""> -->
       </div>
       <div class="second_container">
-        <form method="get" action="./page2">
+        <form method="post" action="./">
           <div class="cnt my-0 mb-5 pt-0 px-3 pb-1  searchbar">
             <div class="part_a" id="part_aa" style="position:relative;display:flex;width:50%;margin:auto;">
               <div class="container bg-light options">
                 <div class="row">
                   <div  class="col-5 option_a" id="appartment-option">
                     <label for="" class="box_bkcgrd m-0"></label>
-                    <input type="checkbox" id="Apartment" name="Appartment" value="Appartment">
+                    <input type="checkbox" id="Apartment" name="type1" value="Appartment">
                     <div class="box_part_a"></div>
                     <label for="" class="m-0">Apartment</label>
                   </div>
                   <div class="col-2 option_a">
                     <label for="villa" class="box_bkcgrd m-0"></label>
-                    <input type="checkbox" id="villa" name="villa" value="villa">
+                    <input type="checkbox" id="villa" name="type1" value="villa">
                     <div class="box_part_a"></div>
                     <label for="villa" class="m-0">Villa</label>
                   </div>
                   <div class="col-5 option_a" id="plot-option">
                     <label for="plot" class="box_bkcgrd m-0"></label>
-                    <input type="checkbox" id="plot" name="plot" value="plot">
+                    <input type="checkbox" id="plot" name="type1" value="plot">
                     <div class="box_part_a"></div>
                     <label for="Apartment" class="m-0">Plot/Land</label>
                   </div>
@@ -116,20 +116,23 @@
               <div class="row">
                 <div class="col-3">
                   <div class="form-group">
-                    <label for="usr" class="font-weight-bold">City:</label>
-                    <select class="custom-select" id="inputGroupSelect01">
-                      <option selected>City...</option>
-                      <option value="city-1">City</option>
-                      <option value="city-1">City-1</option>
-                      <option value="city-2">City-2</option>
-                    </select>
+                    <label for="country" class="font-weight-bold">Country:</label>
+                    <select name="country" class="countries form-control" id="countryId">
+                      <option value="India" countryid="IN" selected>India</option>
+                  </select>
+                    <label for="state" class="font-weight-bold">State:</label>
+                    <select name="state" class="states form-control" id="stateId">
+                      <option value="">Select state</option>
+                  </select>
                   </div>
                 </div>
                 <div class="col-7">
                   <div class="form-group">
-                    <label for="usr" class="font-weight-bold">Location:</label>
-                    <input type="text" class="form-control" id="usr" placeholder="Enter city, state, locality, pincode">
-                  </div>
+                    <label for="city" class="font-weight-bold">City:</label>
+                       <select name="city" class="cities form-control" id="cityId">
+            <option value="">Select City</option>
+         </select>
+         </div>
                 </div>
                 <div class="col-2 button">
                   <div class="form-group">
@@ -158,7 +161,7 @@
                       <div class="col-4">
                         <div style="display:flex;position: relative;">
                           <label class="switch">
-                            <input type="checkbox" name="Residential">
+                            <input type="checkbox" name="type2" value="residential">
                             <span class="slider"></span>
                           </label>
                         </div>
@@ -168,14 +171,14 @@
                       <div class="col-8">
                         <div class="residential p-1 d-flex">
                           <div>
-                            <text>Commerical</text>
+                            <text>Commercial</text>
                           </div>
                         </div>
                       </div>
                       <div class="col-4">
                         <div style="display:flex;position: relative;">
                           <label class="switch">
-                            <input type="checkbox" name="Commerical">
+                            <input type="checkbox" name="type2" value="commercial">
                             <span class="slider"></span>
                           </label>
                         </div>
@@ -192,37 +195,38 @@
                       <div class="boxes pl-2">
                         <div class="box" id="box1">
                           <label for="opt1" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt1" name="Bedrooms" value="1">
+                          <input type="checkbox" id="opt1" name="bedrooms" value="1">
                           <div class="box_cover"></div>
                           <label>1</label>
                         </div>
                         <div class="box" id="box2">
                           <label for="opt2" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt2" name="Bedrooms" value="2">
+                          <input type="checkbox" id="opt2" name="bedrooms" value="2">
                           <div class="box_cover"></div>
                           <label>2</label>
                         </div>
                         <div class="box" id="box3">
                           <label for="opt3" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt3" name="Bedrooms" value="3">
+                          <input type="checkbox" id="opt3" name="bedrooms" value="3">
                           <div class="box_cover"></div>
                           <label>3</label>
                         </div>
                         <div class="box" id="box4">
                           <label for="opt4" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt4" name="Bedrooms" value="4">
+                          <input type="checkbox" id="opt4" name="bedrooms" value="4">
                           <div class="box_cover"></div>
                           <label>4</label>
                         </div>
                         <div class="box" id="box5">
                           <label for="opt5" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt5" name="Bedrooms" value="5">
+                          <input type="checkbox" id="opt5" name="bedrooms" value="5">
                           <div class="box_cover"></div>
                           <label>5</label>
                         </div>
                       </div>
                     </div>
                   </div>
+                  
                   <div class="row">
                     <div class="col-12">
                       <div class="residential p-1">
@@ -233,33 +237,33 @@
                       <div class="boxes pl-2">
                         <div class="box" id="box6">
                           <label for="opt6" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt6" name="Bathrooms" value="1">
+                          <input type="checkbox" id="opt6" name="bathrooms" value="1">
                           <div class="box_cover"></div>
                           <label for="opt6">1</label>
                         </div>
                         <div class="box" id="box7">
                           <label for="opt7" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt7" name="Bathrooms" value="2">
+                          <input type="checkbox" id="opt7" name="bathrooms" value="2">
                           <div class="box_cover"></div>
                           <label for="opt7">2</label>
                         </div>
                         <div class="box" id="box8">
                           <label for="opt8" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt8" name="Bathrooms" value="3">
+                          <input type="checkbox" id="opt8" name="bathrooms" value="3">
                           <div class="box_cover"></div>
                           <label for="opt8">3</label>
                         </div>
                         <div class="box" id="box9">
                           <label for="opt9" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt9" name="Bathrooms" value="4">
+                          <input type="checkbox" id="opt9" name="bathrooms" value="4">
                           <div class="box_cover"></div>
                           <label for="opt9">4</label>
                         </div>
                         <div class="box" id="box10">
                           <label for="opt10" class="box_bkcgrd"></label>
-                          <input type="checkbox" id="opt10" name="Bathrooms" value="4+">
+                          <input type="checkbox" id="opt10" name="bathrooms" value="5">
                           <div class="box_cover"></div>
-                          <label for="opt10">4+</label>
+                          <label for="opt10">5</label>
                         </div>
                       </div>
                     </div>
@@ -288,9 +292,10 @@
                           <div class="value_box px-1">
                             <text-sm>Min:</text-sm>
                             <div class="price">
-                              $<span>
+                              <span>
                                 <input oninput="abc()" type="number" name="range1" id="range1" value="30">
                               </span>
+                            cr
                             </div>
                           </div>
                           <div style="max-height:100%;margin:1%;font-size: 1.4rem;">
@@ -299,9 +304,10 @@
                           <div class="value_box px-1">
                             <text-sm>Max:</text-sm>
                             <div class="price">
-                              $<span>
+                              <span>
                                 <input oninput="abc()" type="number" name="range2" id="range2" value="70">
                               </span>
+                              cr
                             </div>
                           </div>
                         </div>
@@ -320,8 +326,8 @@
                         <!-- slider -->
                         <div class="container slider-tracks">
                           <div class="slider-track"></div>
-                          <input type="range" id="range1_area" min="0" max="100" value="30" oninput="slider_area1()">
-                          <input type="range" min="0" max="100" value="70" id="range2_area" name="budget"
+                          <input type="range" id="range1_area" min="0" max="3000" value="300" oninput="slider_area1()">
+                          <input type="range" min="0" max="3000" value="700" id="range2_area" name="budget"
                             oninput="slider_area2()">
                         </div>
                       </div>
@@ -330,10 +336,12 @@
                           <div class="value_box px-1">
                             <text-sm>Min:</text-sm>
                             <div class="price">
-                              $<span>
-                                <input oninput="abc_area()" type="number" name="range1" id="range1_box" value="30">
+                              <span>
+                                <input oninput="abc_area()" type="number" name="range1" id="range1_box" value="300">
                               </span>
+                              
                             </div>
+                            &ThickSpace; sq.ft
                           </div>
                           <div style="max-height:100%;margin:1%;font-size: 1.4rem;">
                             <span>&nbsp&dash;</span>
@@ -341,10 +349,12 @@
                           <div class="value_box px-1">
                             <text-sm>Max:</text-sm>
                             <div class="price">
-                              $<span>
-                                <input oninput="abc_area()" type="number" name="range2" id="range2_box" value="70">
+                              <span>
+                                <input oninput="abc_area()" type="number" name="range2" id="range2_box" value="700">
                               </span>
+                              
                             </div>
+                            &ThickSpace;sq.ft
                           </div>
                         </div>
                       </div>
@@ -579,6 +589,7 @@
       crossorigin="anonymous"></script>
     <script src="./js/searchbarh.js"></script>
     <script src="./js/filterh.js"></script>
+    <script src="/js/location.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

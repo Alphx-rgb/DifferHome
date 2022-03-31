@@ -130,3 +130,13 @@
     margin-right: 4%;
 }
 }
+
+#range3,#range4{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.part1 select{
+    height: 2rem;
+    margin: 0.2rem;
+}

@@ -83,20 +83,21 @@
 
  .search_button{
      margin:0.3rem;
-     margin-bottom: 0.5rem;
+
      width:auto;    
      border-radius: 5px;
      align-self: flex-end;
-     padding: 0.4rem 0.7rem;
      font-size: 0.8rem;
      letter-spacing: 1pt;
      cursor: pointer;
      font-weight: bold;
      color:white;
-    background-color: #254E7B;
     z-index: 2;
     box-shadow:2px 2px #F5F5F5;
-}      
+}  
+.search_button button{
+    height: 2rem;
+}    
 select option{
     width:20px;
     position: absolute;
