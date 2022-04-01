@@ -195,7 +195,7 @@ app.post('/admin', uploadMultiple ,function(req,res){
 //filter--------------------------
 
 app.post('/',function(req,res){
-    console.log(req.body);
+    // console.log(req.body);
 
     Product.find({
         city:req.body.city,
@@ -205,7 +205,7 @@ app.post('/',function(req,res){
         type1:{$in:req.body.type1},
         type2:{$in:req.body.type2},
         area:{$gt:req.body.range1[1],$lt:req.body.range2[1]}
-
+    
     },function(err,products){
         res.render('page2',{products:products});
     }).sort({x:-1}).limit(6);

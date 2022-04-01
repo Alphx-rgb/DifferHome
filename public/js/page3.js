@@ -1,12 +1,12 @@
 
-$('shrink-img,expand-img,.map').on('click',function () {
-    $('.shrink-img').toggleClass('hide');
-    $('.expand-img').toggleClass('hide');
-    $('.imgs').toggleClass('change-si-size');
-    $('.map').toggleClass('expand');
-    $('.side-images').toggleClass('horizontal');
-    $('.main-image').toggleClass('change-size');
-})
+// $('shrink-img,expand-img,.map').on('click',function () {
+//     $('.shrink-img').toggleClass('hide');
+//     $('.expand-img').toggleClass('hide');
+//     $('.imgs').toggleClass('change-si-size');
+//     $('.map').toggleClass('expand');
+//     $('.side-images').toggleClass('horizontal');
+//     $('.main-image').toggleClass('change-size');
+// })
 
 $('.more-btn').on('click',function () {
     $('.other-details').addClass('show');
