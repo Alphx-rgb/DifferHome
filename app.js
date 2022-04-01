@@ -52,8 +52,8 @@ app.use(function (req, res, next) {
 
 const mongoose = require('mongoose');
 const { stringify } = require('querystring');
-// Uri='mongodb://shivang:tyagi25dec@cluster0-shard-00-00.iv8vu.mongodb.net:27017,cluster0-shard-00-01.iv8vu.mongodb.net:27017,cluster0-shard-00-02.iv8vu.mongodb.net:27017/homesDB?ssl=true&replicaSet=atlas-2hn4x7-shard-0&authSource=admin&retryWrites=true&w=majority'
-Uri="mongodb://localhost:27017/homesDB";
+Uri='mongodb://shivang:tyagi25dec@cluster0-shard-00-00.iv8vu.mongodb.net:27017,cluster0-shard-00-01.iv8vu.mongodb.net:27017,cluster0-shard-00-02.iv8vu.mongodb.net:27017/homesDB?ssl=true&replicaSet=atlas-2hn4x7-shard-0&authSource=admin&retryWrites=true&w=majority'
+// Uri="mongodb://localhost:27017/homesDB";
 mongoose.connect(Uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
