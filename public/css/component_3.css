@@ -1,7 +1,7 @@
 .circle{
     height: 18px;
     width: 18px;
-    background-color: gray;
+    background-color:  rgb(203, 202, 202);
     /* margin-left: 8vw; */
     /* margin-right: 8vw; */
     border-radius: 50%;
@@ -15,7 +15,7 @@
 .line-time{
     height: 1px;
     width: 12vw;
-    background-color: gray;
+    background-color: rgb(203, 202, 202) 0% 0%;
     position: relative;
     top: 10px;
     transform-style: preserve-3d;
@@ -50,3 +50,7 @@
     justify-content: center;
     text-overflow: clip;
 }
+.working-text h5{
+    font-size: 40px;
+}
+

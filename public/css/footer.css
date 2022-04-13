@@ -9,29 +9,82 @@
 }
 .footer{
     width: 100%;
-    background: #49796B;
     text-align: center;
-    color: white;
     margin-bottom: -1rem;
+    background: linear-gradient(rgb(17, 71, 101, 0.8),
+    rgb(17, 71, 101, 0.8)), url("./../images/footer-img.jpeg");
+    margin-top: 20px;
+    height: 350px;
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
 }
-
+.footerContent{
+    color: #f4f4f4;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: left;
+}
+.about{
+    margin-top: 40px;
+}
+.about img{
+    width: 30px;
+}
+.about p{
+    font-size: 30px;
+}
+.about p1{
+    font-size: 13px;
+}
+.about h5{
+    padding-top: 30px;
+}
+.explore{
+    margin-top: 40px;
+    padding-left: 250px;
+}
+.explore p{
+    padding-top: 3px;
+    font-size: 13px;
+}
+.contact{
+    margin-top: 40px;
+    padding-left: 250px;
+}
+.contact-info a :hover{
+    text-decoration: none;
+    color: #9e9e9e;
+}
 .icons{
     padding-top: 1rem;
 }
 
 .icons a{
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 0.8rem;
     color: #f4f4f4;
 }
-.a:hover{
+.icons a :hover{
     text-decoration: none;
+    color: #9e9e9e;
 }
-.company-name{
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    letter-spacing: 3px;
+.copyright{
+    clear: both;
+    background-color: transparent
+    color: #fff;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+.copyright p{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 @media (max-width: 500px){

@@ -19,7 +19,9 @@ a {
 .logo{
   font-family:  "Roboto Condensed", sans-serif;
 }
-
+.logo img{
+  width: 40px;
+}
 /*======================================================
                           Navbar
   ======================================================*/
@@ -64,6 +66,10 @@ a {
   text-transform: uppercase;
   align-content: center;
 } 
+.logo :hover {
+  text-decoration: none;
+  color: #114765;
+}
 @media(max-width: 768px) {
     .logo {
 /*       margin-left: 5px; */
@@ -124,7 +130,7 @@ a {
   width: 0%;
   height: 1px;
   bottom: -1px;
-  background: rgb(13, 26, 38);
+  background:  #114765;
 }
 
 #navbar li a:before {
@@ -133,7 +139,7 @@ a {
 }
 
 #navbar li a:after {
-  background: rgb(13, 26, 38);
+  background:  #114765;
   right: 0;
   /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
